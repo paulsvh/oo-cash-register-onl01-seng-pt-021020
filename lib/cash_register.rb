@@ -16,7 +16,7 @@ class CashRegister
   end
 
   def apply_discount #if register was initialized with discount removes discount% from total and returns either a success message or fail message
-    if discount != 0
+    if @discount != 0
       percent_off = (100 - @discount.to_f) / 100
       self.total = (@total * percent_off).to_i
       "After the discount, the total comes to $#{@total}."
