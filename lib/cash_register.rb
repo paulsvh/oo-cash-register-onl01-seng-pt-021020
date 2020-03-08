@@ -3,7 +3,8 @@ class CashRegister
 
   def initialize(discount = 0) #sets @total to zero OR takes an employee discount as an arugment of the value (20)
     @total = 0
-        @items = []
+    @discount = discount
+    @items = []
   end
 
   def add_item(item, price, quantity = 1) #accepts an item and it's price (and optionally it's quantity) and increases total
