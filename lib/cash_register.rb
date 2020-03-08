@@ -8,7 +8,7 @@ class CashRegister
   end
 
   def add_item(item, price, quantity = 1) #accepts an item and it's price (and optionally it's quantity) and increases total
-    @total += price * quantity
+    self.total += price * quantity
     quantity.times do
       @items << item
     end
